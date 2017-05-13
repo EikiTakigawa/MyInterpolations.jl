@@ -1,6 +1,8 @@
 
 module MyInterpolations
 
+export MyLinInterp
+
 immutable MyLinInterp
     grid
     vals
