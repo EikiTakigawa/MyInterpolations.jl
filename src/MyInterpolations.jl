@@ -6,7 +6,7 @@ export MyLinInterp
 immutable MyLinInterp
     grid::Array
     vals::Array
-end::Number
+end
 
 function (f::MyLinInterp)(x::Number)
     if x < f.grid[1]
