@@ -3,7 +3,7 @@ module MyInterpolations
 
 export MyLinInterp
 
-immutable MyLinInterp
+struct MyLinInterp
     grid::Array
     vals::Array
 end
