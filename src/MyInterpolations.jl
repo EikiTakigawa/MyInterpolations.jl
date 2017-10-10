@@ -4,11 +4,11 @@ module MyInterpolations
 export MyLinInterp
 
 struct MyLinInterp
-    grid::Array{Float64}
-    vals::Array{Float64}
+    grid::Array{Real}
+    vals::Array{Real}
 end
 
-function (f::MyLinInterp)(x::Float64)
+function (f::MyLinInterp)(x::Real)
     if x < f.grid[1]
             y = ((f.vals[2]-f.vals[1])/(f.grid[2]-f.grid[1]))*(x-f.grid[1])+f.vals[1]
     elseif x >= f.grid[end]
